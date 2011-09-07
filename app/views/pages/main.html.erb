@@ -1,0 +1,142 @@
+<div id="menu">
+
+	<div id='title'>
+		<%= image_tag("patulacci.jpg", :alt => "patulacci" , :width => "150")%>
+		<h1 id='big_title'></h1></br>
+<!--		<h2>Thomas Patulacci</h2>-->
+	</div>
+
+		
+
+	<div>
+  <ul id='nav'>
+      <li id='li_home'><%= link_to "Home", '#' %></li>
+      <li id='li_education'><%= link_to "Education", '#' %></li>
+      <li id='li_videos'><%= link_to "Videos", '#' %></li>
+      <li id='li_photos'><%= link_to "Photos", '#' %></li>
+  </ul>
+	</div>
+</div>
+<!--	<div id="loading2" class="content">-->
+<!--		<div><img src='images/loading2.gif'/></div>-->
+<!--		<div>Please wait while the page is loading...</div>-->
+<!--	</div>-->
+	
+	
+	
+	
+	<!--Display Home-->
+	
+	
+<div id="home" class="content">
+	<table><tr>
+		<td>
+			Welcome to my personal webpage.<br/>
+			<br/><br/>
+			I am currently founding the start-up <b>Grooptown</a></b>.<br/>
+			Stay tunned, the service is about to become public...
+			<br/><br/><br/><br/>
+			<i>Fortune favors the braves
+			<div style='text-align: right' >–Jmp</div></i>
+		</td>
+
+	</tr></table>
+</div>
+
+
+<!--Display Education-->
+
+	
+<div id="education" class="content" style="display:none">
+
+	<table>
+		<tr>
+			<td>2008-2009</td>
+			
+			<td>
+				<div><b>Imperial College of London</b></div>
+				<div>Master Degree Metals & Energy Finance</div>
+			</td>
+			
+			<td><a href="http://www3.imperial.ac.uk", style='border: none', target="_blank"><%= image_tag("icl.jpg", :alt => "ICL" , :width => "150")%></a>
+			</td>
+
+		</tr>
+		
+		<tr>
+			<td>2006-2009</td>
+			<td>
+				<div><b>Supelec</b></div>
+
+				<div>
+					Supelec is a top ranking university for sciences in France.<br/>
+					Major in Energy Finance
+				</div>
+			</td>
+			
+			<td><a href="http://www.supelec.fr", style='border: none', target="_blank"><%= image_tag("supelec.jpg", :alt => "SUPELEC" , :width => "80")%></a>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>2004-2006</td>
+
+			<td>
+				<div><b>MPSI, PSI* in Lycee Hoche</b></div>
+				<div>
+					Preparatory Classes for the competitive entrance exams to the Grandes Ecoles.<br /> 			
+					Undergraduate program in advanced Mathematics, Physics and Computer Science.
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+
+			<td>2004</td>
+			
+			<td>
+				<div><b>Baccalaureat (A-Levels) in Sciences</b></div> 
+				<div>Awarded with high honours</div>
+			</td>
+			<td>
+			</td>
+		</tr>	
+	</table>		
+</div>
+
+
+<!--Display videos-->
+
+
+<div id="videos" class="content" style="display:none">
+	<table><tr>
+	<td>
+		<iframe frameborder="0" width="320" height="240" src="http://www.dailymotion.com/embed/video/x32vkg?width=320"></iframe><br /><a href="http://www.dailymotion.com/video/x32vkg_projet-inde-2007_creation" target="_blank">Projet inde 2007</a> <i>par <a href="http://www.dailymotion.com/hijo-del-deserto" target="_blank">hijo-del-deserto</a></i>
+	</td>
+	<td> 
+					<center><b>India Project</b></center><br/><br/> 
+					This video presents my stay in South India during my charity program aiming to build a school for defavorised indian children 
+	</td> 
+	</tr></table> 
+</div>
+
+<!--Display Photos-->
+
+<div id="photos" class="content" style="display:none">
+
+	<div>
+	Some pics of my trips
+	</div></br>
+	
+	<div> 
+	
+	<%= link_to(image_tag("photos/herbe.jpg", :style => "border:none;", :alt => "herbe" , :width => "100"), image_path('photos/herbe.jpg'), :rel => 'lightbox-a', :title => 'herbe') %>
+	
+		<%= link_to(image_tag("photos/piscine.JPG", :style => "border:none;", :alt => "piscine" , :width => "100"), image_path('photos/piscine.JPG'), :rel => 'lightbox-a', :title => 'piscine') %>
+		
+			<%= link_to(image_tag("photos/soupolec.jpg", :style => "border:none;", :alt => "soupolec" , :width => "100"), image_path('photos/soupolec.jpg'), :rel => 'lightbox-a', :title => "soupolec") %>
+
+		</div>
+
+</div>
+

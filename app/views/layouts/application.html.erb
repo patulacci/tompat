@@ -2,13 +2,107 @@
 <html>
 <head>
   <title>Tompat</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
 </head>
 <body>
 
 <%= yield %>
 
+<%= javascript_include_tag 'jquery.min' %>
+<%= javascript_include_tag :all, :cache => true %>
+
+<script type="text/javascript">
+$(function() {
+	$('a[@rel*=lightbox]').lightBox({fixedNavigation:true}); // Select all links that contains lightbox in the attribute rel
+});
+</script>
+
+
+<script type="text/javascript"> 
+
+	$('div#title h1#big_title').text('Home');
+	
+$(
+	
+	function(){
+
+	$('li#li_education').click(function(event){
+		event.preventDefault();
+		$('div#home').fadeOut(1000);
+		$('div#videos').fadeOut(1000);
+		$('div#photos').fadeOut(1000);
+		$('div#education').fadeIn(1000);
+		$('div#title h1#big_title').text('Education');
+		}),
+		
+		$('li#li_home').click(function(event){
+			event.preventDefault();
+			$('div#education').fadeOut(1000);
+			$('div#photos').fadeOut(1000);
+			$('div#videos').fadeOut(1000);
+			$('div#home').fadeIn(1000);
+			$('div#title h1#big_title').text('Home');
+		}),
+		
+		$('li#li_videos').click(function(event){
+			event.preventDefault();
+			$('div#home').fadeOut(1000);
+			$('div#education').fadeOut(1000);
+			$('div#photos').fadeOut(1000);
+			$('div#videos').fadeIn(1000);
+			$('div#title h1#big_title').text('Videos');
+		}),
+		
+		$('li#li_photos').click(function(event){
+			event.preventDefault();
+			$('div#home').fadeOut(1000);
+			$('div#education').fadeOut(1000);
+			$('div#videos').fadeOut(1000);
+			$('div#photos').fadeIn(1000);
+			$('div#title h1#big_title').text('Photos');
+		});
+});
+</script>
+
 </body>
 </html>
+
+<!--	// This, or...-->
+<!--	$('#gallery a').lightBox(); // Select all links in object with gallery ID-->
+<!--	// This, or...-->
+<!--	$('a.lightbox').lightBox(); // Select all links with lightbox class-->
+<!--	// This, or...-->
+<!--	$('a').lightBox(); // Select all links in the page-->
+<!--	// ... The possibility are many. Use your creative or choose one in the examples above-->
+
+
+
+
+<!--<script type="text/javascript"> -->
+<!--setPage = function(a){-->
+<!--$("big_title").innerHTML=$("li_"+a).firstChild.innerHTML;-->
+<!--Element.addClassName("li_"+a,"activelink");Effect.Appear(a,{queue:"end"});-->
+<!--actualPage=a-->
+<!--};-->
+
+<!--changePage=function(a){-->
+<!--Element.removeClassName("li_"+actualPage,"activelink");-->
+<!--$(actualPage).style.display="none";-->
+<!--setPage(a)-->
+<!--};-->
+
+<!--window.onload=function(){-->
+<!--$("loading2").style.display="none";-->
+<!--Nifty("ul#nav a","small transparent top");-->
+<!--setPage(typeof actualPage!="undefined"?actualPage:"home")-->
+<!--};-->
+
+
+
+
+
+
+
