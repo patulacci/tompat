@@ -2,7 +2,7 @@
 
 	<div id='title'>
 		<%= image_tag("patulacci.jpg", :alt => "patulacci" , :width => "150")%>
-		<h1 id='big_title'></h1></br>
+		<h1 id='big_title'>Home</h1></br>
 <!--		<h2>Thomas Patulacci</h2>-->
 	</div>
 
@@ -108,7 +108,7 @@
 <!--Display videos-->
 
 
-<div id="videos" class="content" style="display:none">
+<div id="videos" class="content"  style="display:none">
 	<table><tr>
 	<td>
 		<iframe frameborder="0" width="320" height="240" src="http://www.dailymotion.com/embed/video/x32vkg?width=320"></iframe><br /><a href="http://www.dailymotion.com/video/x32vkg_projet-inde-2007_creation" target="_blank">Projet inde 2007</a> <i>par <a href="http://www.dailymotion.com/hijo-del-deserto" target="_blank">hijo-del-deserto</a></i>
@@ -122,7 +122,7 @@
 
 <!--Display Photos-->
 
-<div id="photos" class="content" style="display:none">
+<div id="photos" class="content"  style="display:none">
 
 	<div>
 	Some pics of my trips
@@ -130,11 +130,11 @@
 	
 	<div> 
 	
-	<%= link_to(image_tag("photos/herbe.jpg", :style => "border:none;", :alt => "herbe" , :width => "100"), image_path('photos/herbe.jpg'), :rel => 'lightbox-a', :title => 'herbe') %>
+	<%= link_to(image_tag("rails.png", :style => "border:none;", :alt => "herbe" , :width => "100"), image_path('rails.png'), :class => 'top_up', :title => 'herbe') %>
 	
-		<%= link_to(image_tag("photos/piscine.JPG", :style => "border:none;", :alt => "piscine" , :width => "100"), image_path('photos/piscine.JPG'), :rel => 'lightbox-a', :title => 'piscine') %>
+		<%= link_to(image_tag("photos/piscine.JPG", :style => "border:none;", :alt => "piscine" , :width => "100"), image_path('photos/piscine.JPG'), :class => 'top_up', :title => 'piscine') %>
 		
-			<%= link_to(image_tag("photos/soupolec.jpg", :style => "border:none;", :alt => "soupolec" , :width => "100"), image_path('photos/soupolec.jpg'), :rel => 'lightbox-a', :title => "soupolec") %>
+			<%= link_to(image_tag("photos/soupolec.jpg", :style => "border:none;", :alt => "soupolec" , :width => "100"), image_path('photos/soupolec.jpg'), :class => 'top_up', :title => "soupolec") %>
 
 		</div>
 

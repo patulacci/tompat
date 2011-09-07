@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <title>Tompat</title>
@@ -6,19 +7,21 @@
   <%= stylesheet_link_tag :all %>
   <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+
+ 	<%= javascript_include_tag 'jquery.min' %>
+ 	<%= javascript_include_tag :all%>
+	<script type="text/javascript" src="http://gettopup.com/releases/latest/top_up-min.js"></script>
+	
 </head>
 <body>
 
 <%= yield %>
 
-<%= javascript_include_tag 'jquery.min' %>
-<%= javascript_include_tag :all, :cache => true %>
+
 
 <script type="text/javascript"> 
-
-	$('div#title h1#big_title').text('Home');
 	
-$(
+$(document).ready(
 	
 	function(){
 
@@ -59,6 +62,7 @@ $(
 		});
 });
 </script>
+
 
 </body>
 </html>
