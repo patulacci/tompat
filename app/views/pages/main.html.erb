@@ -1,4 +1,4 @@
-<div id="menu">
+<header>
 
 	<div id='title'>
 		<%= image_tag("patulacci.jpg", :alt => "patulacci" , :width => "150")%>
@@ -6,48 +6,48 @@
 <!--		<h2>Thomas Patulacci</h2>-->
 	</div>
 
-		
-
-	<div>
-  <ul id='nav'>
-      <li id='li_home'><%= link_to "Home", '#' %></li>
-      <li id='li_education'><%= link_to "Education", '#' %></li>
-      <li id='li_videos'><%= link_to "Videos", '#' %></li>
-      <li id='li_photos'><%= link_to "Photos", '#' %></li>
+	<nav>
+  <ul id='selectable'>
+      <li id='li_home' 			class='menu ui-selected'><%= link_to "Home", '#', :class => 'round' %></li>
+      <li id='li_education' class='menu round'><%= link_to "Education", '#', :class => 'round' %></li>
+      <li id='li_videos' 		class='menu round'><%= link_to "Videos", '#', :class => 'round' %></li>
+      <li id='li_photos' 		class='menu round'><%= link_to "Photos", '#', :class => 'round' %></li>
+      <li id='li_critiques' class='menu round'><%= link_to "Mes Critiques", '#', :class => 'round' %></li>
   </ul>
-	</div>
-</div>
+	</nav>
+	
+</header>
+
+
 <!--	<div id="loading2" class="content">-->
 <!--		<div><img src='images/loading2.gif'/></div>-->
 <!--		<div>Please wait while the page is loading...</div>-->
 <!--	</div>-->
 	
+
+<!--Display Home********************************************************************************************************************-->
 	
 	
-	
-	<!--Display Home-->
-	
-	
-<div id="home" class="content">
+<section id="home" class="content">
 	<table><tr>
 		<td>
-			Welcome to my personal webpage.<br/>
-			<br/><br/>
-			I am currently founding the start-up <b>Grooptown</a></b>.<br/>
-			Stay tunned, the service is about to become public...
-			<br/><br/><br/><br/>
+			Welcome to my personal webpage.	<br/><br/><br/>
+			
+			I am currently founding the start-up <strong>Grooptown</strong>. <br/>
+			Stay tunned, the service is about to become public... <br/><br/><br/><br/>
+			
 			<i>Fortune favors the braves
 			<div style='text-align: right' >–Jmp</div></i>
 		</td>
 
 	</tr></table>
-</div>
+</section>
 
 
-<!--Display Education-->
+<!--Display Education***************************************************************************************************************-->
 
 	
-<div id="education" class="content" style="display:none">
+<section id="education" class="content" style="display:none">
 
 	<table>
 		<tr>
@@ -102,13 +102,13 @@
 			</td>
 		</tr>	
 	</table>		
-</div>
+</section>
 
 
-<!--Display videos-->
+<!--Display videos********************************************************************************************************-->
 
 
-<div id="videos" class="content"  style="display:none">
+<section id="videos" class="content"  style="display:none">
 	<table><tr>
 	<td>
 		<iframe frameborder="0" width="320" height="240" src="http://www.dailymotion.com/embed/video/x32vkg?width=320"></iframe><br /><a href="http://www.dailymotion.com/video/x32vkg_projet-inde-2007_creation" target="_blank">Projet inde 2007</a> <i>par <a href="http://www.dailymotion.com/hijo-del-deserto" target="_blank">hijo-del-deserto</a></i>
@@ -118,11 +118,12 @@
 					This video presents my stay in South India during my charity program aiming to build a school for defavorised indian children 
 	</td> 
 	</tr></table> 
-</div>
+</section>
 
-<!--Display Photos-->
 
-<div id="photos" class="content"  style="display:none">
+<!--Display Photos********************************************************************************************************-->
+
+<section id="photos" class="content"  style="display:none">
 
 	<div>
 	Some pics of my trips
@@ -138,5 +139,5 @@
 
 		</div>
 
-</div>
+</section>
 
