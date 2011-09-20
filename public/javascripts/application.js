@@ -6,7 +6,9 @@ $("ul li a").click(function(){
     var idToShow = $(this).attr("href");
     $(idToShow).fadeIn().siblings(".content").fadeOut();
     
-//    $(' h1#big_title').text($(this).contents());
+    var nomPage = $(this).text();
+    
+    $(' h1#big_title').text(nomPage);
     return false;
 		});
 });
