@@ -137,11 +137,10 @@ color:#666;
 
 section#education table{
 position: relative;
-top: -30px;
 }
 
 section#education td{
-padding:20px;
+padding:10px;
 background: #fff;
 }
 
