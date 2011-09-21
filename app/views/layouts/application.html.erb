@@ -9,13 +9,12 @@
   <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
 
 	<script type="text/javascript" src="http://gettopup.com/releases/latest/top_up-min.js"></script>
-
-	
 	<%= javascript_include_tag 'application' %>
 	
-
 </head>
 <body>
+
+<%= render 'layouts/header' %>
 
 <%= yield %>
 

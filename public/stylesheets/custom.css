@@ -90,7 +90,10 @@ header nav ul li{
 float:left;
 margin-right:3px;
 text-align: center;
+}
 
+header nav ul li#li_critiques{
+margin-left: 200px;
 }
 
 header nav ul a{
@@ -103,10 +106,18 @@ color: #000;
 opacity: 0.9;
 }
 
-header nav ul a:hover{
+header nav ul li#li_critiques a{
+width: 12em;
+background: #FF2B48;
+font-style: italic;
+opacity: 0.9;
+}
+
+header nav ul a:hover, header nav ul li#li_critiques a:hover{
 background: #FFA826;
 color: #FFF;
 }
+
 
 #selectable .ui-selected {
 opacity: 1;

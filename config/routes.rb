@@ -1,4 +1,9 @@
 Tompat::Application.routes.draw do
+
+  get "films/show"
+
+	resources :films
+
   root :to => "pages#main"
 
   # The priority is based upon order of creation:
