@@ -110,13 +110,19 @@ header nav ul li#li_critiques a{
 width: 12em;
 background: #FF2B48;
 font-style: italic;
-opacity: 0.9;
+color: #fff;
+opacity: 0.8;
 }
 
-header nav ul a:hover, header nav ul li#li_critiques a:hover{
+header nav ul a:hover{
 background: #FFA826;
 color: #FFF;
 }
+
+header nav ul li#li_critiques a:hover{
+opacity: 1;
+}
+
 
 
 #selectable .ui-selected {
